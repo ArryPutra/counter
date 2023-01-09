@@ -1,9 +1,6 @@
 let min = document.getElementById("min");
 let plus = document.getElementById("plus");
 let number = document.getElementById("number");
-let restartButton = document.getElementById("restartButton");
-
-let notice = document.querySelector(".notice");
 
 if (localStorage.getItem("numberIncrement") == null) {
     localStorage.setItem("numberIncrement", 0);
@@ -49,19 +46,3 @@ min.addEventListener("click", function () {
         number.style.color = "#44D62C";
     }
 });
-//restartButton
-restartButton.addEventListener("click", function () {
-    notice.style.top = 10 + "vh";
-});
-iyaButton = function() {
-    notice.style.top = -50 + "vh";
-    counter = 0;
-    localStorage.setItem("numberIncrement", counter);
-    number.textContent = localStorage.getItem("numberIncrement");
-    number.style.color = "#1aa7ec";
-}
-tidakButton = function() {
-    notice.style.top = -50 + "vh";
-}
-
-//stopWatch
