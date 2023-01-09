@@ -69,73 +69,11 @@
 
         #plus:active,
         #min:active {
-            font-size: 30px;
+            font-size: 38px;
         }
 
         #number {
             font-size: 30px;
             font-weight: 700;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .buttonOptions {
-            position: absolute;
-            bottom: 5vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-            color: white;
-        }
-
-        .buttonOptions div {
-            width: 80%;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .buttonOptions button {
-            font-family: 'Poppins', sans-serif;
-            border: none;
-            padding: 0px 10px;
-            height: 30px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: 0.2s ease-in-out;
-            margin-bottom: 10px;
-        }
-
-        .buttonOptions span {
-            opacity: 0.5;
-        }
-
-        .buttonOptions button:hover {
-            box-shadow: 3px 3px 10px black;
-        }
-
-        .notice {
-            padding: 20px;
-            margin: 0px 40px;
-            border-radius: 12px;
-            background: white;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-            font-family: 'Poppins', sans-serif;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.546);
-            transition: 0.5s ease-in-out;
-            top: -50vh;
-        }
-        .notice button {
-            border: none;
-            border-radius: 99px;
-            padding: 10px 50px;
-            margin-top: 15px;
-            cursor: pointer;
             font-family: 'Poppins', sans-serif;
         }
