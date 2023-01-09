@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@600&family=Roboto+Mono:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">     
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span id="hour">00</span>
+            <span>:</span>
+            <span id="minute">00</span>
+            <span>:</span>
+            <span id="second">00</span>
+        </nav>
+        <div class="container">
+            <button id="min">-</button>
+            <span id="number">0</span>
+            <button id="plus">+</button>
+        </div>
+        <div class="buttonOptions">
+            <div>
+                <button id="restartButton" style="background: crimson; color: white;">Restart</button>
+                <button style="background: #44D62C; color: white;">Counter Time</button>
+                <button style="background: #21D4FD; color: white;">Pause Time</button>
+            </div>
+            <span class="note">Web ini akan menyimpan angka terakhir anda dengan otomatis.</span>
+        </div>
+        <div class="notice">
+            <span>Apakah anda yakin ingin mengulang nomor penghitung terakhir anda?</span>
+            <div>
+                <button onclick="iyaButton()" style="background: crimson; color: white;">Iya</button>
+                <button onclick="tidakButton()" style="background: #44D62C; color: white;">Tidak</button>
+            </div>
+        </div>
+    </header>
+    
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
