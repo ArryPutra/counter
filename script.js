@@ -2,10 +2,7 @@ let min = document.getElementById("min");
 let plus = document.getElementById("plus");
 let number = document.getElementById("number");
 
-if (localStorage.getItem("numberIncrement") == null) {
-    localStorage.setItem("numberIncrement", 0);
-}
-
+counter = 0;
 counter = localStorage.getItem("numberIncrement");
 number.textContent = localStorage.getItem("numberIncrement");
 
@@ -46,3 +43,30 @@ min.addEventListener("click", function () {
         number.style.color = "#44D62C";
     }
 });
+
+// restartButton
+let restartBtn = document.getElementById("restartBtn");
+
+restartBtn.addEventListener("click", function() {
+    let notice = document.querySelector(".notice");
+    notice.style.top = 5 + "vh";
+
+    let tidak = document.getElementById("tidak");
+    tidak.onclick = function() {
+        notice.style.top = -50 + "vh";
+    }
+
+    let iya = document.getElementById("iya");
+    iya.onclick = function() {
+        localStorage.clear("numberIncrement");
+        counter = 0;
+        number.textContent = "0";
+        number.style.color = "#21D4FD";
+        notice.style.top = -50 + "vh";
+    }
+})
+
+if(localStorage.getItem("numberIncrement") == null) {
+    number.textContent = "0";
+    number.style.color = "#21D4FD";
+}
